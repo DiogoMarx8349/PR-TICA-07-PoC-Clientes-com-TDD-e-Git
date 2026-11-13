@@ -37,4 +37,9 @@ public class Cliente {
     public void setGenero(String genero) {
         this.genero = genero;
     }
+
+    @Override
+public String toString() {
+    return nome + "(" + id + ")(" + desconto + "%)";
+    }
 }
