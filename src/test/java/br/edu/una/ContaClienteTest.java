@@ -48,4 +48,15 @@ public void deveAlterarClienteDaConta() {
 
     assertEquals(novoCliente, conta.getCliente());
     }
+
+    @Test
+public void deveAlterarSaldoDaConta() {
+    Cliente cliente = new Cliente(1, "Diogo", 10);
+
+    ContaCliente conta = new ContaCliente(1, cliente, 500.0);
+
+    conta.setSaldo(800.0);
+
+    assertEquals(800.0, conta.getSaldo());
+    }
 }
