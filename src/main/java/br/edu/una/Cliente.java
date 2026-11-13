@@ -14,7 +14,8 @@ public class Cliente {
     }
 
     public int getId() {
-    return 0;
+    return id;
+}
 }
 
     public String getNome() {
