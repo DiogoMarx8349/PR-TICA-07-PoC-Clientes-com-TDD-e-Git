@@ -28,3 +28,12 @@ public class ClienteTest {
         assertEquals(10, cliente.getDesconto());
     }
 }
+
+@Test
+public void deveAlterarDescontoDoCliente() {
+    Cliente cliente = criarCliente();
+
+    cliente.setDesconto(20);
+
+    assertEquals(20, cliente.getDesconto());
+}
