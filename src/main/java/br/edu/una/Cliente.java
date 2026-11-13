@@ -5,11 +5,13 @@ public class Cliente {
     private int id;
     private String nome;
     private int desconto;
+    private String genero;
 
     public Cliente(int id, String nome, int desconto) {
         this.id = id;
         this.nome = nome;
         this.desconto = desconto;
+        this.genero = "nd";
     }
 
     public int getId() {
@@ -29,6 +31,10 @@ public class Cliente {
     }
 
     public String getGenero() {
-    return "nd";
+        return genero;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
     }
 }
