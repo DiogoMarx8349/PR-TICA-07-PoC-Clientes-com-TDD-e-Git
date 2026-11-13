@@ -59,4 +59,10 @@ public class ContaCliente {
     this.saldo -= valor;
     return this.saldo;
     }
+
+    @Override
+public String toString() {
+    return cliente.getNome() + "(" + cliente.getId()
+            + ") saldo=R$" + String.format("%.2f", saldo);
+    }
 }
