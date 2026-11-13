@@ -49,4 +49,14 @@ public class ContaCliente {
     this.saldo += valor;
     return this.saldo;
     }
+
+    public double subSaldo(double valor) {
+    if (valor > saldo) {
+        System.out.println("Saldo insuficiente para realizar o saque.");
+        return saldo;
+    }
+
+    this.saldo -= valor;
+    return this.saldo;
+    }
 }
