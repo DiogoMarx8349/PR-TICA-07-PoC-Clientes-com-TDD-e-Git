@@ -12,4 +12,11 @@ public class ClienteTest {
 
         assertEquals("Diogo", cliente.getNome());
     }
+
+    @Test
+    public void deveRetornarIdDoCliente() {
+        Cliente cliente = new Cliente(1, "Diogo", 10);
+
+        assertEquals(1, cliente.getId());
+    }
 }
