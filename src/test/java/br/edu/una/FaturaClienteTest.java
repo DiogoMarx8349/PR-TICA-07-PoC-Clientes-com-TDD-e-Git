@@ -53,4 +53,16 @@ public void deveCalcularValorDaFaturaComDesconto() {
 
     assertEquals(90.0, fatura.getValorComDesconto());
     }
+
+    @Test
+public void deveRetornarFaturaFormatada() {
+    Cliente cliente = new Cliente(1, "Diogo", 10);
+
+    FaturaCliente fatura = new FaturaCliente(1, cliente, 100.0);
+
+    assertEquals(
+        "Fatura [id=1, cliente=Diogo(1)(10%), valor=100.0 ]",
+        fatura.toString()
+    );
+    }
 }
