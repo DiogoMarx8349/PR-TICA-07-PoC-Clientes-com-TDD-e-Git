@@ -1,4 +1,3 @@
-
 package br.edu.una;
 
 public class Cliente {
@@ -23,5 +22,9 @@ public class Cliente {
 
     public int getDesconto() {
         return desconto;
+    }
+
+    public void setDesconto(int desconto) {
+        this.desconto = desconto;
     }
 }
