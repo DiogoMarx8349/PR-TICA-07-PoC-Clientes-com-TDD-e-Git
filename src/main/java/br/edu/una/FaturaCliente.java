@@ -20,11 +20,15 @@ public class FaturaCliente {
         return id;
     }
 
-    public Cliente getCliente() {
-        return cliente;
-    }
+public Cliente getCliente() {
+    return cliente;
+}
 
-    public double getValor() {
-        return valor;
+public void setCliente(Cliente cliente) {
+    this.cliente = cliente;
+}
+
+public double getValor() {
+    return valor;
     }
 }
