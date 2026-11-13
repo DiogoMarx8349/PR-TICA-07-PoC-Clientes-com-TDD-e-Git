@@ -92,4 +92,13 @@ public void naoDevePermitirSaqueComSaldoInsuficiente() {
 
     assertEquals(500.0, conta.getSaldo());
     }
+
+    @Test
+public void deveRetornarContaFormatada() {
+    Cliente cliente = new Cliente(1, "Diogo", 10);
+
+    ContaCliente conta = new ContaCliente(1, cliente, 500.0);
+
+    assertEquals("Diogo(1) saldo=R$500.00", conta.toString());
+    }
 }
