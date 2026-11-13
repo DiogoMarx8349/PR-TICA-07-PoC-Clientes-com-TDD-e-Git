@@ -42,4 +42,12 @@ public class ClienteTest {
         assertEquals("nd", cliente.getGenero());
     }
 
+    @Test
+public void deveAlterarGeneroDoCliente() {
+    Cliente cliente = criarCliente();
+
+    cliente.setGenero("m");
+
+    assertEquals("m", cliente.getGenero());
+    }
 }
