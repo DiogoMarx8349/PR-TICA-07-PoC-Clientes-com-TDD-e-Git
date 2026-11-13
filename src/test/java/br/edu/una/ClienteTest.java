@@ -1,4 +1,3 @@
-
 package br.edu.una;
 
 import org.junit.jupiter.api.Test;
@@ -27,13 +26,20 @@ public class ClienteTest {
         Cliente cliente = criarCliente();
         assertEquals(10, cliente.getDesconto());
     }
-}
 
-@Test
-public void deveAlterarDescontoDoCliente() {
-    Cliente cliente = criarCliente();
+    @Test
+    public void deveAlterarDescontoDoCliente() {
+        Cliente cliente = criarCliente();
+        cliente.setDesconto(20);
+        assertEquals(20, cliente.getDesconto());
+    }
 
-    cliente.setDesconto(20);
+    // COLOQUE O NOVO TESTE AQUI, ANTES DA ÚLTIMA CHAVE!
 
-    assertEquals(20, cliente.getDesconto());
+    @Test
+    public void deveRetornarGeneroNaoDefinido() {
+        Cliente cliente = criarCliente();
+        assertEquals("nd", cliente.getGenero());
+    }
+
 }
