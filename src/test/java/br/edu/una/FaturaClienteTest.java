@@ -33,4 +33,15 @@ public void deveAlterarClienteDaFatura() {
 
     assertEquals(novoCliente, fatura.getCliente());
     }
+
+    @Test
+public void deveAlterarValorDaFatura() {
+    Cliente cliente = new Cliente(1, "Diogo", 10);
+
+    FaturaCliente fatura = new FaturaCliente(1, cliente, 100.0);
+
+    fatura.setValor(200.0);
+
+    assertEquals(200.0, fatura.getValor());
+    }
 }
