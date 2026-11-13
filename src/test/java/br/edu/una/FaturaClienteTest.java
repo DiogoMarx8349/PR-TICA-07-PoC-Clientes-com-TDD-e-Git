@@ -44,4 +44,13 @@ public void deveAlterarValorDaFatura() {
 
     assertEquals(200.0, fatura.getValor());
     }
+
+    @Test
+public void deveCalcularValorDaFaturaComDesconto() {
+    Cliente cliente = new Cliente(1, "Diogo", 10);
+
+    FaturaCliente fatura = new FaturaCliente(1, cliente, 100.0);
+
+    assertEquals(90.0, fatura.getValorComDesconto());
+    }
 }
