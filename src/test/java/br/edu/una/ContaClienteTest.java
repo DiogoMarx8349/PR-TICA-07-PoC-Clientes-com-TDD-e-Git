@@ -59,4 +59,15 @@ public void deveAlterarSaldoDaConta() {
 
     assertEquals(800.0, conta.getSaldo());
     }
+
+    @Test
+public void deveAdicionarDepositoNaConta() {
+    Cliente cliente = new Cliente(1, "Diogo", 10);
+
+    ContaCliente conta = new ContaCliente(1, cliente, 500.0);
+
+    conta.addDeposito(200.0);
+
+    assertEquals(700.0, conta.getSaldo());
+    }
 }
