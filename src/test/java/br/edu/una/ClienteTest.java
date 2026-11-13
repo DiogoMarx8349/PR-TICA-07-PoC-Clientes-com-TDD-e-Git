@@ -50,4 +50,11 @@ public void deveAlterarGeneroDoCliente() {
 
     assertEquals("m", cliente.getGenero());
     }
+
+    @Test
+public void deveRetornarClienteFormatado() {
+    Cliente cliente = criarCliente();
+
+    assertEquals("Diogo(1)(10%)", cliente.toString());
+    }
 }
