@@ -16,4 +16,15 @@ public class ContaClienteTest {
         assertEquals(cliente, conta.getCliente());
         assertEquals(500.0, conta.getSaldo());
     }
-}
+
+   @Test
+public void deveCriarContaComIdECliente() {
+    Cliente cliente = new Cliente(1, "Diogo", 10);
+
+    ContaCliente conta = new ContaCliente(2, cliente);
+
+    assertEquals(2, conta.getId());
+    assertEquals(cliente, conta.getCliente());
+    assertEquals(0.0, conta.getSaldo());
+    }
+} 
