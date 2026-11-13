@@ -27,4 +27,8 @@ public class Cliente {
     public void setDesconto(int desconto) {
         this.desconto = desconto;
     }
+
+    public String getGenero() {
+    return "nd";
+    }
 }
