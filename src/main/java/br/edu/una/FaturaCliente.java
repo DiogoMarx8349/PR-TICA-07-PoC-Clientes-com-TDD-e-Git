@@ -35,4 +35,10 @@ public double getValor() {
     public void setValor(double valor) {
     this.valor = valor;
     }
+
+    public double getValorComDesconto() {
+    double desconto = cliente.getDesconto();
+
+    return valor - (valor * desconto / 100);
+    }
 }
