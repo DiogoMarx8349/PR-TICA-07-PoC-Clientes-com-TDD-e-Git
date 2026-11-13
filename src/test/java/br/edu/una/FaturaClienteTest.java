@@ -11,4 +11,14 @@ public class FaturaClienteTest {
 
         assertEquals(1, fatura.getId());
     }
+
+    @Test
+public void deveCriarFaturaComClienteEValor() {
+    Cliente cliente = new Cliente(1, "Diogo", 10);
+    FaturaCliente fatura = new FaturaCliente(2, cliente, 100.0);
+
+    assertEquals(2, fatura.getId());
+    assertEquals(cliente, fatura.getCliente());
+    assertEquals(100.0, fatura.getValor(), 0.001);
+    }
 }
