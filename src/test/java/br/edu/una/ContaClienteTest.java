@@ -36,4 +36,16 @@ public void deveCriarContaApenasComId() {
     assertEquals(null, conta.getCliente());
     assertEquals(0.0, conta.getSaldo());
     }
+
+    @Test
+public void deveAlterarClienteDaConta() {
+    Cliente cliente = new Cliente(1, "Diogo", 10);
+    Cliente novoCliente = new Cliente(2, "Carlos", 15);
+
+    ContaCliente conta = new ContaCliente(1, cliente, 500.0);
+
+    conta.setCliente(novoCliente);
+
+    assertEquals(novoCliente, conta.getCliente());
+    }
 }
