@@ -14,11 +14,14 @@ public class Cliente {
     }
 
     public int getId() {
-    return id;
-}
-}
+        return id;
+    }
 
     public String getNome() {
         return nome;
+    }
+
+    public int getDesconto() {
+        return desconto;
     }
 }
