@@ -13,14 +13,18 @@ public class ClienteTest {
     @Test
     public void deveCriarClienteComNome() {
         Cliente cliente = criarCliente();
-
         assertEquals("Diogo", cliente.getNome());
     }
 
     @Test
     public void deveRetornarIdDoCliente() {
         Cliente cliente = criarCliente();
-
         assertEquals(1, cliente.getId());
+    }
+
+    @Test
+    public void deveRetornarDescontoDoCliente() {
+        Cliente cliente = criarCliente();
+        assertEquals(10, cliente.getDesconto());
     }
 }
