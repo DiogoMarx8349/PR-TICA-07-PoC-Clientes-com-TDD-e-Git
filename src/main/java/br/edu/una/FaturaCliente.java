@@ -41,4 +41,11 @@ public double getValor() {
 
     return valor - (valor * desconto / 100);
     }
+
+    @Override
+public String toString() {
+    return "Fatura [id=" + id
+            + ", cliente=" + cliente
+            + ", valor=" + valor + " ]";
+    }
 }
